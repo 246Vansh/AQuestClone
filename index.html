@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AQuest - Creative Production & Technology Company</title>
+    <link rel="icon" type="image/png" href="download.png">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <canvas id="ripple-canvas"></canvas>
+    <div class="cursor-outer" id="cursor-outer"></div>
+
+    <!-- Inner white pointer (acts like the real cursor) -->
+    <div class="cursor-inner" id="cursor-inner"></div>
+
+
+    <header class="header">
+        <div class="logo" id="logo">
+            <img src="download.png" alt="AQ Logo" class="logo-img">
+        </div>
+
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+
+    <div class="menu" id="menu">
+        <nav>
+            <ul>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">PR</a></li>
+                <li><a href="#">Social</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="scroll-wrapper">
+
+        <!-- Horizontal Scrolling Text -->
+        <section class="horizontal-scroll">
+            <div class="scroll-text">
+                <h1>WEBSITE SOCIAL FILMS 3D LAB</h1>
+            </div>
+        </section>
+
+        <!-- Image Columns -->
+        <div class="columns-left">
+            <div class="column column-left">
+                <img src="src/img/pic1.jpg" />
+                <img src="src/img/pic2.jpg" />
+                <img src="src/img/pic3.webp" />
+                <img src="src/img/pic4.webp" />
+                <img src="src/img/pic5.jfif" />
+            </div>
+        </div>
+
+        <div class="columns-right">
+            <div class="column column-right">
+                <img src="src/img/pic6.webp" />
+                <img src="src/img/pic7.jpeg" />
+                <img src="src/img/pic8.jpg" />
+                <img src="src/img/pic9.webp" />
+                <img src="src/img/pic10.jpg" />
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Music Toggle -->
+    <div class="music-toggle" id="musicToggle" aria-label="Toggle Music">
+        <img src="src/minus.png" alt="Pause Icon" class="icon flat-icon" />
+        <svg class="icon wave-icon" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg">
+            <path id="wavePath" fill="none" stroke="white" stroke-width="2" />
+        </svg>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="bgAudio" loop>
+        <source src="src/Untitled design (3).mp4" type="audio/mpeg" />
+    </audio>
+
+    <!-- GSAP + ScrollTrigger + Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
